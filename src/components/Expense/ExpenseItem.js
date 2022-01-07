@@ -1,6 +1,6 @@
 import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   return (
     <div className="row px-0 mx-0 apip_rounded apip_bg1 shadow d-flex my-3 h4 py-3">
       <ExpenseDate date={props.date} />
@@ -12,6 +12,6 @@ function ExpenseItem(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ExpenseItem;
