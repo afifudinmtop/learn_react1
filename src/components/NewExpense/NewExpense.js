@@ -1,8 +1,19 @@
 import ExpenseForm from "./ExpenseForm";
-const NewExpense = () => {
+import { v4 as uuid } from "uuid";
+
+const NewExpense = (props2) => {
+  const saveExpenseData = (props) => {
+    const expenseData = {
+      ...props,
+      id: uuid(),
+    };
+    // console.log(expenseData);
+    props2.addExpanse(expenseData);
+  };
+
   return (
     <div>
-      <ExpenseForm />
+      <ExpenseForm saveExpenseData={saveExpenseData} />
     </div>
   );
 };

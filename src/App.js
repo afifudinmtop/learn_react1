@@ -24,9 +24,13 @@ const App = () => {
     },
   ];
 
+  const addExpanse = (props) => {
+    console.log(props);
+  };
+
   return (
     <div className="apip_w70 mx-auto mt-2">
-      <NewExpense />
+      <NewExpense addExpanse={addExpanse} />
       <Expense items={expenses} />
     </div>
   );

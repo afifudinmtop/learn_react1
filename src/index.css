@@ -3,7 +3,7 @@
 }
 
 .apip_max_width1 {
-  width: max-content;
+  width: max-content !important;
 }
 
 .apip_w70 {
