@@ -1,4 +1,5 @@
-import ExpenseItem from "./components/Expense/ExpenseItem";
+import Expense from "./components/Expense/Expense";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -25,33 +26,8 @@ const App = () => {
 
   return (
     <div className="apip_w70 mx-auto mt-2">
-      <div className="h3 fw-bold my-3">Let's get started!</div>
-
-      <div className="p-3 bg-dark apip_rounded">
-        <ExpenseItem
-          title={expenses[0].title}
-          amount={expenses[0].amount}
-          date={expenses[0].date}
-        />
-
-        <ExpenseItem
-          title={expenses[1].title}
-          amount={expenses[1].amount}
-          date={expenses[1].date}
-        />
-
-        <ExpenseItem
-          title={expenses[2].title}
-          amount={expenses[2].amount}
-          date={expenses[2].date}
-        />
-
-        <ExpenseItem
-          title={expenses[3].title}
-          amount={expenses[3].amount}
-          date={expenses[3].date}
-        />
-      </div>
+      <NewExpense />
+      <Expense items={expenses} />
     </div>
   );
 };

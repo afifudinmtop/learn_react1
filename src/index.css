@@ -18,6 +18,18 @@
   background: #3f00ff;
 }
 
+.apip_bg3 {
+  background: #f07af0d1;
+}
+
+.apip_bg4 {
+  background: #6610f2;
+}
+
 .apip_rounded {
   border-radius: 20px;
+}
+
+.apip_rounded_10 {
+  border-radius: 10px;
 }
